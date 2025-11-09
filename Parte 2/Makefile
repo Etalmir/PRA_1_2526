@@ -17,3 +17,10 @@ bin/testCircle: testCircle.cpp Circle.o Shape.o Point2D.o
 	mkdir -p bin
 	g++ testCircle.cpp Circle.o Shape.o Point2D.o -o bin/testCircle
 
+Rectangle.o: Rectangle.cpp Rectangle.h Shape.h Point2D.h
+	g++ -c Rectangle.cpp -o Rectangle.o
+
+bin/testRectangle: testRectangle.cpp Rectangle.o Shape.o Point2D.o
+	g++ -c testRectangle.cpp
+	mkdir -p bin
+	g++ testRectangle.cpp Rectangle.o Shape.o Point2D.o -o bin/testRectangle
