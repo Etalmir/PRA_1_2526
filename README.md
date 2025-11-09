@@ -1,6 +1,6 @@
 # PRA_2425
 
-Repositorio de la práctica para la asignatura de Ingeniería de Robótica (curso 2024-2025).
+Repositorio de la práctica para la asignatura de Ingeniería de Robótica (curso 2025-2026).
 
 ## Descripción del proyecto
 
