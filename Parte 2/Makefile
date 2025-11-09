@@ -32,3 +32,7 @@ bin/testSquare: testSquare.cpp Square.o Rectangle.o Shape.o Point2D.o
 	g++ -c testSquare.cpp
 	mkdir -p bin
 	g++ testSquare.cpp Square.o Rectangle.o Shape.o Point2D.o -o bin/testSquare
+
+bin/testDrawing: testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o Point2D.o
+		mkdir -p bin
+		g++ -o bin/testDrawing testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o Point2D.o
